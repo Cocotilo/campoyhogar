@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'OswaldSemiBold';
+    src: url('https://cdn.glitch.global/9c6146f3-a060-4896-a1b6-1bacf1cb39ba/Oswald-SemiBold.ttf?v=1668877583025') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#20a353, #7dd95c);
+  font-size: 1.2em;
+  margin: 0 auto;
+  width: 100%;
+}
+/*
+header {
+
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+
+  background-color: #32a55f;
+  border-bottom: 5px solid white;
+}
+*/
+header {
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #32a55f;
+  border-bottom: 5px solid white;
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Espacio reducido entre logo y texto */
+}
+
+.logo {
+  width: 10%;
+  height: 10%;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.product {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.product h3 {
+  margin: 0.8rem 0 0.4rem;
+}
+
+.price {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.nav-menu li a:hover {
+  color: #c8f7c5;
+}
+
+
+.horario-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.horario-table th,
+.horario-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.horario-table th {
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.horario-table tbody tr:last-child td {
+  border-bottom: none;
+  text-align: center;
+}
